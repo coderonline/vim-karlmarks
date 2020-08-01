@@ -1,4 +1,4 @@
-# karlmarks
+# vim-karlmarks
 
 A teaching plugin for Vim. It uses the `signcolumn` to display currently active
 `marks`. These are mostly used as jump locations and some are set by Vim
