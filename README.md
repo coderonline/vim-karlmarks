@@ -28,7 +28,7 @@ the window.
 
 ## Installation
 
-Download the [zip file](https://git.entwicklerseite.de/vim-recently-used/snapshot/vim-recently-used-master.zip)
+Download the [zip file](https://git.entwicklerseite.de/vim-karlmarks/snapshot/vim-karlmarks-master.zip)
 and extract it inside `~/.vim/pack/coderonline/start/`.
 
 ### Example
@@ -36,11 +36,11 @@ and extract it inside `~/.vim/pack/coderonline/start/`.
     mkdir ~/.vim/pack/coderonline/start/
     cd    ~/.vim/pack/coderonline/start/
     # download plugin in that directory:
-    curl -o vim-recently-used.zip  https://git.entwicklerseite.de/vim-recently-used/snapshot/vim-recently-used-master.zip
-    # unzip the zip file    
-    unzip vim-recently-used.zip
+    curl -o vim-karlmarks.zip  https://git.entwicklerseite.de/vim-karlmarks/snapshot/vim-karlmarks-master.zip
+    # unzip the zip file
+    unzip vim-karlmarks.zip
     # remove zip file (not needed any more)
-    rm vim-recently-used.zip
+    rm vim-karlmarks.zip
 
 
 ## Deinstallation
