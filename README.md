@@ -7,9 +7,13 @@ These can be set with `m[a-z]`, e.g. `ma` sets mark `a` and this plugin would
 display its line and you can jump to that line with ```a``. Captital letters
 even allow jumps between files and session persistent marks.
 
+![screencast](screencast.gif)
+
 Chances are that you have learned only some of the marks Vim has to offer. This
 plugin will remember you to use more and once you have that on disk you can
 always deinstall it again.
+
+
 
 
 ## Prerequirements
