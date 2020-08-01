@@ -1,0 +1,22 @@
+*vim-karlmarks*   A Vim teaching plugin to show common marks in signcolumn
+
+==============================================================================
+USAGE INSTRUCTIONS                                             *karlmarks*
+
+Install the plugin and have `signcolumn=yes` in your vimrc. The plugin uses
+a CursorHold autocmd to dynamically display signs int he signcolumn. If
+you ever want to remove this plugin, find this text file in your vim
+configuration folder with
+
+    :echo expand("%:p:h:h")
+
+and delete the folder. If you want to copy its name to the clipboard you
+can use:
+
+    :let @+=expand("%:p:h:h")
+
+I hope this plugin helped you to memorize more of the default marks which Vim
+has to offer.
+
+
+vim:tw=78:ts=8:ft=help:norl:
