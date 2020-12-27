@@ -18,7 +18,9 @@ always deinstall it again.
 
 I recommend you use this in your `~/.vim/vimrc`
 
-    set signcolumn=yes
+```vim
+set signcolumn=yes
+```
 
 because if you set it to `signcolumn=auto` it will flicker when you change
 the window.
@@ -30,31 +32,37 @@ and extract it inside `~/.vim/pack/coderonline/start/`.
 
 ### Example
 
-    mkdir ~/.vim/pack/coderonline/start/
-    cd    ~/.vim/pack/coderonline/start/
-    # download plugin in that directory:
-    curl -o vim-karlmarks.zip  https://git.entwicklerseite.de/vim-karlmarks/snapshot/vim-karlmarks-master.zip
-    # unzip the zip file
-    unzip vim-karlmarks.zip
-    # remove zip file (not needed any more)
-    rm vim-karlmarks.zip
+```sh
+mkdir ~/.vim/pack/coderonline/start/
+cd    ~/.vim/pack/coderonline/start/
+# download plugin in that directory:
+curl -o vim-karlmarks.zip  https://git.entwicklerseite.de/vim-karlmarks/snapshot/vim-karlmarks-master.zip
+# unzip the zip file
+unzip vim-karlmarks.zip
+# remove zip file (not needed any more)
+rm vim-karlmarks.zip
+```
 
 ## Configure optional and additional marks
 
 Here comes some inspiration for additional marks you could enable. Some
 are potentially disturbing and are not pre-configured for that reason:
 
-    let g:karlmarks  =   '"'  " position in buffer when left
-    let g:karlmarks .=  '{}'  " start/end paragraph
-    let g:karlmarks .=  '()'  " start/end sentence
-    let g:karlmarks .=  '[]'  " start/end sentence
-    let g:karlmarks .=  '.'   " last change
-    let g:karlmarks .=  "^"   " insert mode stopped
-    let g:karlmarks .=  "'`"
+```vim
+let g:karlmarks  =   '"'  " position in buffer when left
+let g:karlmarks .=  '{}'  " start/end paragraph
+let g:karlmarks .=  '()'  " start/end sentence
+let g:karlmarks .=  '[]'  " start/end sentence
+let g:karlmarks .=  '.'   " last change
+let g:karlmarks .=  "^"   " insert mode stopped
+let g:karlmarks .=  "'`"
+```
 
 but the `g_karlmarks` setting defaults to
 
-    let g:karlmarks = "<>"
+```vim
+let g:karlmarks = "<>"
+```
 
 to allow easier modification of the last selected block, e.g. reposition the
 start of the block with `m<` and use `gv` to show the new selection.
@@ -66,5 +74,8 @@ Remove the folder `~/.vim/pack/coderonline/start/vim-karlmarks` (if you named
 it as suggested in the Installation section)
 
 ### Exmaple
-    rm -irv ~/.vim/pack/coderonline/start/vim-karlmarks
+
+```sh
+rm -irv ~/.vim/pack/coderonline/start/vim-karlmarks
+```
 
