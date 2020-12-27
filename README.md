@@ -42,7 +42,7 @@ and extract it inside `~/.vim/pack/coderonline/start/`.
 ## Configure optional and additional marks
 
 Here comes some inspiration for additional marks you could enable. Some
-are potentially disturbing and were for that reason not pre-configured:
+are potentially disturbing and are not pre-configured for that reason:
 
     let g:karlmarks  =   '"'  " position in buffer when left
     let g:karlmarks .=  '{}'  " start/end paragraph
@@ -52,9 +52,9 @@ are potentially disturbing and were for that reason not pre-configured:
     let g:karlmarks .=  "^"   " insert mode stopped
     let g:karlmarks .=  "'`"
 
-but the `g_karlmarks_additional` setting defaults to
+but the `g_karlmarks` setting defaults to
 
-    let g:karlmarks_additional = "<>"
+    let g:karlmarks = "<>"
 
 to allow easier modification of the last selected block, e.g. reposition the
 start of the block with `m<` and use `gv` to show the new selection.
