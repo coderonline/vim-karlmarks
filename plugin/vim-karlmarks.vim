@@ -1,14 +1,9 @@
-let g:markerbar_additional =   '"'   " position in buffer when left
-let g:markerbar_additional .=  '<>'  " start/end last selection
-let g:markerbar_additional .=  '{}'  " start/end paragraph
-let g:markerbar_additional .=  '()'  " start/end sentence
-let g:markerbar_additional .=  '[]'  " start/end sentence
-let g:markerbar_additional .=  '.'   " last change
-let g:markerbar_additional .=  "^"   " insert mode stopped
-let g:markerbar_additional .=  "'`"
+if !exists("g:karlmarks")
+    let g:karlmarks = "<>"
+endif
 
 function! KarlMarks()
-    for c in map(split(g:markerbar_additional, '\zs'), "char2nr(v:val)") +
+    for c in map(split(g:karlmarks, '\zs'), "char2nr(v:val)") +
                 \ range(char2nr('a'), char2nr('z')) +
                 \ range(char2nr('A'), char2nr('Z')) +
                 \ range(char2nr('0'), char2nr('9'))
@@ -22,7 +17,6 @@ function! KarlMarks()
         endif
     endfor
 endfunction
-
 autocmd CursorHold * call KarlMarks()
 
 " important for distraction free reading while changing windows

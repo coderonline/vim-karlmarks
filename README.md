@@ -14,8 +14,6 @@ plugin will remember you to use more and once you have that on disk you can
 always deinstall it again.
 
 
-
-
 ## Prerequirements
 
 I recommend you use this in your `~/.vim/vimrc`
@@ -24,7 +22,6 @@ I recommend you use this in your `~/.vim/vimrc`
 
 because if you set it to `signcolumn=auto` it will flicker when you change
 the window.
-
 
 ## Installation
 
@@ -41,6 +38,26 @@ and extract it inside `~/.vim/pack/coderonline/start/`.
     unzip vim-karlmarks.zip
     # remove zip file (not needed any more)
     rm vim-karlmarks.zip
+
+## Configure optional and additional marks
+
+Here comes some inspiration for additional marks you could enable. Some
+are potentially disturbing and were for that reason not pre-configured:
+
+    let g:karlmarks  =   '"'  " position in buffer when left
+    let g:karlmarks .=  '{}'  " start/end paragraph
+    let g:karlmarks .=  '()'  " start/end sentence
+    let g:karlmarks .=  '[]'  " start/end sentence
+    let g:karlmarks .=  '.'   " last change
+    let g:karlmarks .=  "^"   " insert mode stopped
+    let g:karlmarks .=  "'`"
+
+but the `g_karlmarks_additional` setting defaults to
+
+    let g:karlmarks_additional = "<>"
+
+to allow easier modification of the last selected block, e.g. reposition the
+start of the block with `m<` and use `gv` to show the new selection.
 
 
 ## Deinstallation
